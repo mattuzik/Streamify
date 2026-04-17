@@ -45,7 +45,7 @@ const Movie = () => {
 
         <div className="movie__player">
           <h3 className="movie__player-title">Смотреть онлайн</h3>
-            <VideoPlayer imdbId={film.imdbId}/>
+            <VideoPlayer />
         </div>
 
         <div className="movie__related">
@@ -63,7 +63,6 @@ const Movie = () => {
                       titleEng={item.nameEn}
                       year={item.year}
                       genres={item.genres}
-                      countries={item.countries}
                       id={item.filmId}
                       key={item.kinopoiskId || index}
                     /> 
