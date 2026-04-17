@@ -6,4 +6,4 @@
 * Scss
 
 Api: kinopoiskApi
-GitHub Pages link: https://mattuzik.github.io/Streamify
+###GitHub Pages link: https://mattuzik.github.io/Streamify
