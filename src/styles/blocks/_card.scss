@@ -1,0 +1,32 @@
+@use '../helpers' as *;
+
+.card {
+  cursor: pointer;
+  max-width: rem(300);
+
+  &__image {
+    width: 100%;
+    height: fluid(430, 300);
+    object-fit: cover;
+  }
+
+  &__title {
+    margin-top: fluid(8, 6);
+    font-size: rem(18);
+    font-weight: 400;
+  }
+
+  &__info {
+    font-size: rem(14);
+    color: var(--color-gray);
+  }
+
+  @include hover {
+    transform: translateY(-5px);
+
+    .card__title {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+  }
+}

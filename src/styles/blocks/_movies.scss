@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.movies {
+  padding-top: rem(20);
+  padding-bottom: fluid(26, 22);
+
+  &__title {
+    flex: 1;
+  }
+  
+  &__link {
+    cursor: pointer;
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(18);
+
+    @include mobile-s {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    margin-bottom: rem(36);
+    grid-template-columns: repeat(5, 1fr);
+    gap: rem(25);
+
+    @include laptop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mobile-medium {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
