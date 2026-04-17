@@ -1,6 +1,6 @@
 ## Stack: 
-React
-TypeScript
-Redux
-Redux Toolkit
-Sass
+* React
+* TypeScript
+* Redux
+* Redux Toolkit
+* Scss
