@@ -4,3 +4,5 @@
 * Redux
 * Redux Toolkit
 * Scss
+
+Api: kinopoiskApi
