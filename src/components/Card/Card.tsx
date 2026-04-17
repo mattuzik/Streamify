@@ -7,7 +7,6 @@ const Card = (props: any) => {
     titleEng,
     year,
     genres,
-    countries,
     id
   } = props
 
