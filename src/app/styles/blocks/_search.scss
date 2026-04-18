@@ -1,0 +1,40 @@
+@use '../helpers' as *;
+
+.search {
+  width: 100%;
+  padding: rem(6) rem(12);
+  border-radius: rem(18);
+  border: 1px solid var(--color-gray);
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  &-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: rem(4);
+    top: 110%;
+    padding: rem(10);
+    border-radius: rem(12);
+    max-height: rem(300);
+    overflow-y: auto;
+    z-index: 10;
+    background-color: var(--background-color);
+  }
+
+  &-item {
+    border-radius: 10rem;
+    padding: rem(4) rem(12);
+    cursor: pointer;
+
+    @include hover {
+      background-color: var(--help-color);
+      color: var(--color-accent);
+    }
+  }
+
+  &:focus {
+    border-color: var(--text-color);
+    outline: 0;
+  }
+}

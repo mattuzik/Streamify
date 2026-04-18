@@ -1,0 +1,91 @@
+@use '../helpers' as *;
+
+.movie {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(12);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 25% 50% auto;
+    margin-bottom: fluid(100, 40);
+    gap: rem(24);
+
+    &-genres {
+      display: flex;
+      font-weight: 300;
+      opacity: 0.4;
+      gap: rem(5);
+      margin-bottom: rem(6);
+
+
+    }
+
+    &-genre {
+      &:not(:last-child) {
+        &::after {
+          content: ',';
+        }
+      }
+    }
+
+    @include tablet {
+      grid-template-columns: 35% auto;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__rating {
+    &-value {
+      font-size: rem(24);
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    border-radius: rem(6);
+  }
+
+  &__player {
+    &-title {
+      text-align: center;
+      margin-bottom: rem(12);
+    }
+  }
+
+  &__related {
+    padding-block: rem(40);
+
+    &-title {
+      text-align: center;
+      margin-bottom: rem(16);
+    }
+
+    &-row {
+      display: grid;
+      gap: rem(25);
+      grid-template-columns: repeat(5, 1fr);
+
+      @include laptop {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include mobile-medium {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    } 
+
+    &-none {
+      text-align: center;
+    }
+  }
+}
