@@ -15,7 +15,7 @@
 - **State Management:** [Redux Toolkit](https://js.org)
 - **Data Fetching:** [RTK Query](https://js.orgrtk-query/overview)
 - **Architecture:** [Feature-Sliced Design (FSD)](https://feature-sliced.design)
-- **Styling:** CSS Modules / Tailwind CSS (выбери свое)
+- **Styling:** BEM
 
 ## 🏗 Архитектурный подход
 
