@@ -38,7 +38,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com.git
+   git clone https://github.com/mattuzik/Streamify
    ```
 2. Перейдите в папку проекта:
    ```bash
